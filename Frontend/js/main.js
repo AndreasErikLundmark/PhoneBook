@@ -53,7 +53,7 @@ function createPhoneList(friends) {
         phoneListDiv.className = "friendEntry";
 
         // this creates a tag on the html element so you can find it by friend name
-        phoneListDiv.dataset.friendName = friend.name; 
+        phoneListDiv.dataset.friendName = friend.name;
 
 
         phoneListDiv.appendChild(friendName);
@@ -144,27 +144,27 @@ function selectFriendHandler(friend) {
     const previouslySelected = document.querySelector(".friendEntrySelected");
 
 
-       // If the clicked friend is already selected, unselect it
-       if (previouslySelected && previouslySelected.dataset.friendName === friend.name) {
+    // If the clicked friend is already selected, unselect it
+    if (previouslySelected && previouslySelected.dataset.friendName === friend.name) {
         previouslySelected.classList.remove("friendEntrySelected");
         previouslySelected.classList.add("friendEntry");
         selectedFriend = null; // No friend is selected now
         console.log("Friend unselected: " + friend.name);
         return;
     }
-        // If a different friend is selected, deselect the previously selected friend
+    // If a different friend is selected, deselect the previously selected friend
 
     if (previouslySelected) {
         previouslySelected.classList.remove("friendEntrySelected");
         previouslySelected.classList.add("friendEntry");
         console.log("Friend unselected: " + friend.name);
-    
+
     }
 
 
     selectedFriend = friend.name;
     console.log("Currently selected friend: " + friend.name);
-  
+
     //this looks for the html friend name given in the createPhonelist method
     const findCurrentFriend = document.querySelector(`[data-friend-name="${friend.name}"]`);
 
@@ -280,7 +280,7 @@ document.addEventListener("DOMContentLoaded", () => {
         // searchField.value="";
     }
 
-   
+
 
 });
 
