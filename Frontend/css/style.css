@@ -1,0 +1,143 @@
+@font-face {
+    font-family: 'SpaceMono';
+    src: url('../fonts/SpaceMono-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+body {
+  
+    margin: 0;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    font-family: 'SpaceMono';
+  
+}
+
+#phoneBookContainer1 {
+    position: static;
+    display: flex;
+    flex-direction: column; 
+    text-align: center;
+    width: 300px;
+    height: 500px;
+    border-style:double;
+    border-color: black;
+    box-shadow: 5px 10px #888888;
+    border-radius: 25px; /*rounded corners*/
+
+    background-color: #eafffd;
+
+}
+
+#search{
+
+    margin-top: 20px;
+    background-color: white;
+    background-color: #eafffd;
+}
+
+
+#phoneBookContainer2 {
+
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    padding: 10px; /* Optional: Add some padding */
+    box-sizing: border-box; /* Include padding in height */
+    position: relative; /* Needed for absolute positioning inside */
+    overflow: auto; /* Scroll if content overflows */
+    height: 320px;
+}
+
+#buttons {
+    position: absolute;
+    background-color: white;
+    text-align: center;
+    align-self: center;
+    padding: 10px;
+    margin-top: 450px;
+    background-color: #eafffd;
+   
+}
+.buttons{
+  font-family: 'SpaceMono';
+  border-radius: 10px;
+  background-color: white;
+  border-width: thin;
+
+  font-size: medium;
+}
+
+.inputFields{
+  width: 170px;
+  height: 20px;
+}
+
+
+.friendEntry {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 0.5px dotted #000; /* Optional: to visually separate each entry */
+    background-color:white;
+}
+
+.friendEntry h5 {
+    margin: 0;
+    padding: 0 10px; /* Optional: to add space between name and phone number */
+}
+
+.friendEntrySelected{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 0.5px dotted #000; /* Optional: to visually separate each entry */
+    background-color: #dde9e7;
+  }
+
+
+
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden */
+    position: fixed; 
+    z-index: 1; 
+    align-content: center;
+    width: 300px; 
+    height: 600px; 
+    overflow: auto; /* Enable scroll if needed */
+
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: medium;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+
+
+

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="../css/style.css?rnd=12345"/>
+
+
+</head>
+<body>
+
+<div id="phoneBookContainer1">
+  <div id="search">
+  <input class="inputFields" id="searchText" type="text" placeholder="Search for users"/>
+  <button class= "buttons" id="searchButton">Search</button>
+  </div>
+<h1 id="phoneBookHeader">Phone book</h1>
+
+
+<div id="phoneBookContainer2">
+
+
+
+
+</div>
+
+<div id="buttons">
+  <button class= "buttons" id="addButton">Add</button>
+  <button class= "buttons" id="deleteButton">Delete</button> 
+  </div>
+</div>
+
+
+
+<!-- Modal Form FOR adding Freinds -->
+<div id="addFriendModal" class="modal">
+  <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Add a New Friend</h2>
+      <form id="addFriendForm">
+          <label for="name">Name:</label><br>
+          <input class="inputFields" type="text" id="name" name="name" required><br>
+          <label for="phoneNumber">Phone Number:</label><br>
+          <input class="inputFields" type="text" id="phoneNumber" name="phoneNumber" required><br><br>
+          <button class="buttons" type="submit">Add Contact</button>
+      </form>
+  </div>
+</div>
+
+
+
+  <script type="text/javascript" src="../js/main.js"></script>
+</body>
+</html>
