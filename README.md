@@ -8,16 +8,14 @@
 [![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 
 
-## Screenshots
-
-<img width="341" alt="phonebookprint" src="https://github.com/user-attachments/assets/0e75ea2a-4304-4a4a-8a3b-1ed190b1e546">
-
-
 Backend build in Java, Spring boot API ( and a JSON filewriter local DB )
 First run StreamsScheduleApplication.java 
 localhost://8080
 /streams
 See LiveStreamController for mapping
 
-Frontend HTML, CSS, JS
 Second run index.html
+
+## Screenshots
+
+<img width="200" alt="phonebookprint" src="https://github.com/user-attachments/assets/0e75ea2a-4304-4a4a-8a3b-1ed190b1e546">
