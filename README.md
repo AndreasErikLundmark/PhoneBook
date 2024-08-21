@@ -42,6 +42,6 @@ Note: Maven required
 
 
 
-## Screenshots
-
+## Screenshots frontend
+run index.html for frontend demo. 
 <img width="200" alt="phonebookprint" src="https://github.com/user-attachments/assets/0e75ea2a-4304-4a4a-8a3b-1ed190b1e546">
