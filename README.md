@@ -8,13 +8,39 @@
 [![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 
 
-Backend build in Java, Spring boot API ( and a JSON filewriter local DB )
-First run StreamsScheduleApplication.java 
-localhost://8080
-/streams
-See LiveStreamController for mapping
+# PhoneBook API
 
-Second run index.html
+This project is a simple PhoneBook backend API built with Java and Spring Boot. It allows you to manage a phonebook with functionalities to add, update, find, and delete friends. The data is stored locally using a JSON file, acting as a simple database.
+Note: A "friend" represents a "phonebook entry" ... which might be a bit misleading or impractical, 
+Note: Maven required
+
+## Structure
+
+- **PhoneBookController**: Handles the API requests and maps them to the corresponding methods in the `PhoneBookRepository`.
+- **PhoneBookRepository**: Manages the storage and retrieval of friends' data.
+- **Friend**: Represents a friend with attributes like `name` and `phoneNumber`.
+
+## API Endpoints
+
+- `GET /phonebook`  
+  Retrieves the entire list of friends. ( Phone book )
+
+- `GET /phonebook/{name}`  
+  Searches for a friend by name. Returns the friend's details if found.
+
+- `POST /phonebook/{name}/{phoneNumber}`  
+  Adds a new friend to the phonebook. The friend's name and phone number are provided in the URL path.
+
+- `PUT /phonebook/{name}/{phoneNumber}`  
+  Updates the phone number of an existing friend. If the friend doesn't exist, it will be added to the phonebook.
+
+- `DELETE /phonebook/{name}`  
+  Removes a friend from the phonebook based on their name.
+
+
+
+
+
 
 ## Screenshots
 
