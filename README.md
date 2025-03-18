@@ -1,4 +1,4 @@
-# PhoneBook-fullstack
+# PhoneBook
 
 [![Java](https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=java&logoColor=white)](https://www.oracle.com/java/)
 [![JSON](https://img.shields.io/badge/JSON-000000?style=for-the-badge&logo=json&logoColor=white)](https://www.json.org/json-en.html)
@@ -42,6 +42,6 @@ Note: Maven required
 
 
 
-## Screenshots frontend
+## Screenshots 
 open index.html for frontend demo. 
 <img width="200" alt="phonebookprint" src="https://github.com/user-attachments/assets/0e75ea2a-4304-4a4a-8a3b-1ed190b1e546">
